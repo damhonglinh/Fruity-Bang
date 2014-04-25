@@ -618,6 +618,7 @@ public class Scene extends AbstractAppState implements GameConstant, ActionListe
 
         saDieSound = new AudioNode(assetManager, "Sounds/worm laught.wav", false);
         saDieSound.setLooping(false);
+        saDieSound.setPositional(false);
         wormDieSound.setVolume(1f);
     }
 

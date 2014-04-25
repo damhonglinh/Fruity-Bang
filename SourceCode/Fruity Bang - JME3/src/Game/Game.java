@@ -93,8 +93,8 @@ public class Game extends SimpleApplication implements ScreenController, GameCon
 
         nifty.loadStyleFile("nifty-default-styles.xml");
         nifty.loadControlFile("nifty-default-controls.xml");
-        mute = nifty.getRenderEngine().createImage("Textures/2D Images/mute.png", false);
-        on = nifty.getRenderEngine().createImage("Textures/2D Images/on.png", false);
+        mute = nifty.getRenderEngine().createImage(nifty.getCurrentScreen(), "Textures/2D Images/mute.png", false);
+        on = nifty.getRenderEngine().createImage(nifty.getCurrentScreen(), "Textures/2D Images/on.png", false);
 
 //        nifty.setDebugOptionPanelColors(true);
 
